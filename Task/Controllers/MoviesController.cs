@@ -29,14 +29,14 @@ namespace Task.Controllers
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Movie>>> GetMovies()
         {
-            return await _context.Movies.ToListAsync();
+            return await _context.Movies.Include(m => m.Customer).ToListAsync();
         }
 
         // GET: api/Movies/5
         [HttpGet("{id}")]
         public async Task<ActionResult<Movie>> GetMovie(int id)
         {
-            var movie = await _context.Movies.FindAsync(id);
+            var movie = await _context.Movies.Include(m => m.Customer).FirstOrDefaultAsync(m => m.Id == id);
 
             if (movie == null)
             {
@@ -82,6 +82,11 @@ namespace Task.Controllers
         [HttpPost]
         public async Task<ActionResult<Movie>> PostMovie(Movie movie)
         {
+            if (!ModelState.IsValid)
+            {
+                return BadRequest();
+            }
+
             _context.Movies.Add(movie);
             await _context.SaveChangesAsync();
 

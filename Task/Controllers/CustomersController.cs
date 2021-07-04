@@ -32,7 +32,7 @@ namespace Task.Controllers
         [AllowAnonymous]
         public async Task<ActionResult<IEnumerable<Customer>>> GetCustomers()
         {
-            return await _context.Customers.ToListAsync();
+            return await _context.Customers.Include(c => c.Movies).ToListAsync();
         }
 
         // GET: api/Customers/5
@@ -40,7 +40,7 @@ namespace Task.Controllers
         [Authorize(Roles = UserRoles.Admin)]
         public async Task<ActionResult<Customer>> GetCustomer(int id)
         {
-            var customer = await _context.Customers.FindAsync(id);
+            var customer = await _context.Customers.Include(c => c.Movies).FirstOrDefaultAsync(c => c.Id == id);
 
             if (customer == null)
             {
@@ -86,6 +86,12 @@ namespace Task.Controllers
         [HttpPost]
         public async Task<ActionResult<Customer>> PostCustomer(Customer customer)
         {
+
+            if (!ModelState.IsValid)
+            {
+                return BadRequest();
+            }
+
             _context.Customers.Add(customer);
             await _context.SaveChangesAsync();
 

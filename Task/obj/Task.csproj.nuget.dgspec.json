@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "F:\\C# Eng Hani itake 39\\Projects\\Task\\Task\\Task.csproj": {}
+    "C:\\Users\\Eid\\Documents\\Task\\Task\\Task.csproj": {}
   },
   "projects": {
-    "F:\\C# Eng Hani itake 39\\Projects\\Task\\Task\\Task.csproj": {
+    "C:\\Users\\Eid\\Documents\\Task\\Task\\Task.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\C# Eng Hani itake 39\\Projects\\Task\\Task\\Task.csproj",
+        "projectUniqueName": "C:\\Users\\Eid\\Documents\\Task\\Task\\Task.csproj",
         "projectName": "Task",
-        "projectPath": "F:\\C# Eng Hani itake 39\\Projects\\Task\\Task\\Task.csproj",
+        "projectPath": "C:\\Users\\Eid\\Documents\\Task\\Task\\Task.csproj",
         "packagesPath": "C:\\Users\\Eid\\.nuget\\packages\\",
-        "outputPath": "F:\\C# Eng Hani itake 39\\Projects\\Task\\Task\\obj\\",
+        "outputPath": "C:\\Users\\Eid\\Documents\\Task\\Task\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

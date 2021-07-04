@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "+UWg04v1BCNy72oZjexqJX7tVwFZ4vSnDM9Zo+GE5xOdV81fXIb8dnW4vkujsVkpyc7ymqPbUws3N9wsSIQrmQ==",
+  "dgSpecHash": "NVwIz7Z6FLMKZnz9yGs/V7stQjO2jjAoD0rXjxRelcaKuv96iwEbCO7yzSV6Kv52UNTeovP9dgdxFwt6kDCAmw==",
   "success": true,
-  "projectFilePath": "F:\\C# Eng Hani itake 39\\Projects\\Task\\Task\\Task.csproj",
+  "projectFilePath": "C:\\Users\\Eid\\Documents\\Task\\Task\\Task.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Eid\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\Eid\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\5.0.1\\microsoft.aspnetcore.authentication.jwtbearer.5.0.1.nupkg.sha512",
